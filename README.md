@@ -1,5 +1,5 @@
 # WORLDTRIP WEBPAGE 🖖
-Página criada como desafio do ignite-react da rocketseat, e incrementada cons alguns detalhes por mim
+Página criada como desafio do ignite-react da rocketseat, e incrementada cons alguns detalhes e funcionalidades por mim posteriormente
 
 ## 🔎 | Visualize
 Visualize o projeto:
