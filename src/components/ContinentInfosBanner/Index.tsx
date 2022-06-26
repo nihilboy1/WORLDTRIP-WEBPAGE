@@ -5,7 +5,7 @@ import americanorteImageBanner from '../../images/continent_infos_banners/americ
 import americasulImageBanner from '../../images/continent_infos_banners/americasul_continentinfos.jpg'
 import asiaImageBanner from '../../images/continent_infos_banners/asia_continentinfos.jpg'
 import europaImageBanner from '../../images/continent_infos_banners/europe_continentinfos.png'
-import oceaniaImageBanner from '../../images/continent_infos_banners/oceania_continentinfos.jpg'
+import oceaniaImageBanner from '../../images/continent_infos_banners/oceania_continentinfos.avif'
 
 export function ContinentInfosBanner() {
   const { id } = useParams()
@@ -23,7 +23,9 @@ export function ContinentInfosBanner() {
           ? oceaniaImageBanner
           : id === 'americasul'
           ? americasulImageBanner
-          : americanorteImageBanner
+          : id === 'americanorte'
+          ? americanorteImageBanner
+          : ''
       })`}
       backgroundPosition={id === 'americanorte' ? 'bottom' : 'center'}
       w="full"
@@ -50,7 +52,9 @@ export function ContinentInfosBanner() {
           ? 'Oceania'
           : id === 'americasul'
           ? 'América do Sul'
-          : 'América do Norte'}
+          : id === 'americanorte'
+          ? 'América do Norte'
+          : ''}
       </Text>
     </Flex>
   )

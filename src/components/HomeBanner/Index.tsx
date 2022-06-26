@@ -14,10 +14,10 @@ export function HomeBanner() {
       align="center"
     >
       <VStack align="start" gap="1rem" ml="9rem" zIndex="1">
-        <Text as="h1" fontSize="2.25rem" color="white">
+        <Text as="h1" fontSize="2.25rem" color="white" fontWeight="bold">
           5 Continentes, <br /> infinitas possibilidades
         </Text>
-        <Text as="p" fontSize="1.25rem" color="white">
+        <Text as="p" fontSize="1.25rem" color="white" fontWeight="semibold">
           Chegou a hora de tirar do papel a viagem que você <br /> sempre
           sonhou.
         </Text>

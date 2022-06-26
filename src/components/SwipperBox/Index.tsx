@@ -39,7 +39,9 @@ export function SwipperBox() {
               justify="center"
             >
               <Tooltip
-                label="Clique pra saber mais! :)"
+                label="Clique para saber mais!"
+                mb="-1rem"
+                borderRadius="md"
                 aria-label="A tooltip"
                 placement="top"
                 fontSize="1.5rem"
@@ -81,7 +83,9 @@ export function SwipperBox() {
               justify="center"
             >
               <Tooltip
-                label="Clique pra saber mais! :)"
+                label="Clique para saber mais!"
+                mb="-1rem"
+                borderRadius="md"
                 aria-label="A tooltip"
                 placement="top"
                 fontSize="1.5rem"
@@ -124,7 +128,9 @@ export function SwipperBox() {
               justify="center"
             >
               <Tooltip
-                label="Clique pra saber mais! :)"
+                label="Clique para saber mais!"
+                mb="-1rem"
+                borderRadius="md"
                 aria-label="A tooltip"
                 placement="top"
                 fontSize="1.5rem"
@@ -166,7 +172,9 @@ export function SwipperBox() {
               justify="center"
             >
               <Tooltip
-                label="Clique pra saber mais! :)"
+                label="Clique para saber mais!"
+                mb="-1rem"
+                borderRadius="md"
                 aria-label="A tooltip"
                 placement="top"
                 fontSize="1.5rem"
@@ -192,7 +200,7 @@ export function SwipperBox() {
                 px="0.5rem"
                 borderRadius="md"
               >
-                Tecnologia e Tradição
+                Tecnologia e tradição
               </Text>
             </Flex>
           </SwiperSlide>
@@ -208,7 +216,9 @@ export function SwipperBox() {
               justify="center"
             >
               <Tooltip
-                label="Clique pra saber mais! :)"
+                label="Clique para saber mais!"
+                mb="-1rem"
+                borderRadius="md"
                 aria-label="A tooltip"
                 placement="top"
                 fontSize="1.5rem"
@@ -240,7 +250,7 @@ export function SwipperBox() {
           </SwiperSlide>
           <SwiperSlide>
             <Flex
-              backgroundImage={`url('/src/images/swipper_images/home_oceania_swipper.jpg')`}
+              backgroundImage={`url('/src/images/swipper_images/home_oceania_swipper.avif')`}
               backgroundSize="cover"
               backgroundPosition="center"
               w="full"
@@ -250,11 +260,13 @@ export function SwipperBox() {
               justify="center"
             >
               <Tooltip
-                label="Clique pra saber mais! :)"
+                label="Clique para saber mais!"
+                mb="-1rem"
+                bg="gray.700"
+                borderRadius="md"
                 aria-label="A tooltip"
                 placement="top"
                 fontSize="1.5rem"
-                bgColor="gray.700"
               >
                 <Text
                   as="a"
@@ -268,7 +280,7 @@ export function SwipperBox() {
                 </Text>
               </Tooltip>
               <Text
-                as="p"
+                as="span"
                 fontWeight="bold"
                 fontSize="1.5rem"
                 color="white"
@@ -276,7 +288,7 @@ export function SwipperBox() {
                 px="0.5rem"
                 borderRadius="md"
               >
-                Cangurus e hobbits
+                Vida selvagem e hobbits
               </Text>
             </Flex>
           </SwiperSlide>
