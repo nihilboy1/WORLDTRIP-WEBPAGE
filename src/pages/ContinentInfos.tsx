@@ -26,7 +26,7 @@ export function ContinentInfos() {
   })
   return (
     <>
-      <Flex flexDir="column" minW="450px">
+      <Flex flexDir="column" minW="375px">
         <Header />
         <ContinentInfosBanner currentContinentID={currentContinentID} />
         <ContinentInfosTexts currentContinentID={currentContinentID} />

@@ -1,13 +1,15 @@
 import { ChevronLeftIcon } from '@chakra-ui/icons'
-import { Box, Tooltip } from '@chakra-ui/react'
+import { Box, Tooltip, useMediaQuery } from '@chakra-ui/react'
 import { Link, useParams } from 'react-router-dom'
 import { WorldTripLogo } from './WorldTripLogo'
 
 export function Header() {
   const { id } = useParams()
+  const [isSmallerThan400] = useMediaQuery('(max-width: 400px)')
+
   return (
     <Box
-      minW="450px"
+      w="auto"
       as="header"
       display="flex"
       justifyContent="center"
@@ -16,7 +18,11 @@ export function Header() {
       position="relative"
     >
       {id && (
-        <Box position="absolute" top="2rem" left="3rem">
+        <Box
+          position="absolute"
+          top="2rem"
+          left={isSmallerThan400 ? '0.5rem' : '3rem'}
+        >
           <Tooltip label="Home" aria-label="A tooltip" mt="-3.8rem">
             <Link to="/">
               <ChevronLeftIcon

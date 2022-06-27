@@ -34,7 +34,9 @@ export function ContinentInfosBanner({
           ? americanorteImageBanner
           : ''
       })`}
-      backgroundPosition={id === 'americanorte' ? 'bottom' : 'center'}
+      backgroundPosition={
+        id === 'americanorte' ? 'bottom' : id === 'europa' ? 'left' : 'center'
+      }
       minH="31.50rem"
       backgroundSize="cover"
       pl="12%"
