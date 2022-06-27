@@ -9,6 +9,7 @@ export function CitiesBox({ currentContinentID }: CitiesBoxProps) {
   const [isSmallerThan960] = useMediaQuery('(max-width: 960px)')
 
   return (
+    
     <Flex
       w="full"
       flexDir="column"
