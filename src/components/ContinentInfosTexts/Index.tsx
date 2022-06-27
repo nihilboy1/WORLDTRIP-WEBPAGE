@@ -27,6 +27,7 @@ export function ContinentInfosTexts({
       mt="5rem"
       gap="5.5rem"
       flexDir={isSmallerThan1100 ? 'column' : 'row'}
+      transition="all .4s"
     >
       <Box
         textAlign="justify"
@@ -45,6 +46,7 @@ export function ContinentInfosTexts({
         flexDir={isSmallerThan600 ? 'column' : 'row'}
         w={isSmallerThan1100 ? '80%' : '35%'}
         mx={isSmallerThan1100 ? 'auto' : '0'}
+        transition="all .4s"
       >
         <VStack>
           <Text fontSize="3rem" fontWeight="semibold" color="yellow.400">

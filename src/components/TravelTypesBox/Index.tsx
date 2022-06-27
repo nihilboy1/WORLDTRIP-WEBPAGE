@@ -1,14 +1,23 @@
-import { Grid, GridItem, Img, Text } from '@chakra-ui/react'
+import { Flex, useMediaQuery } from '@chakra-ui/react'
+import { TravelType } from './TravelType'
+import building from '/src/images/traveltypes_icons/building1.png'
+import cocktailImage from '/src/images/traveltypes_icons/cocktail1.png'
+import earthImage from '/src/images/traveltypes_icons/earth1.png'
+import museumImage from '/src/images/traveltypes_icons/museum1.png'
+import surfImage from '/src/images/traveltypes_icons/surf1.png'
 
 export function TravelTypesBox() {
+  const [isSmallerThan780] = useMediaQuery('(max-width: 780px)')
   return (
-    <Grid
-      templateColumns="repeat(5, 10%)"
+    <Flex
       alignItems="center"
-      justifyContent="center"
-      gap="10%"
-      h="24rem"
-      w="full"
+      flexDir={isSmallerThan780 ? 'column' : 'row'}
+      justifyContent="space-between"
+      mb={isSmallerThan780 ? '5rem' : '0'}
+      mt={isSmallerThan780 ? '5rem' : '0'}
+      h={isSmallerThan780 ? '50rem' : '24rem'}
+      w="80%"
+      mx="auto"
       _after={{
         content: '""',
         position: 'absolute',
@@ -17,70 +26,16 @@ export function TravelTypesBox() {
         bgColor: 'gray.600',
         width: '5rem',
         left: '50%',
-        top: '52%',
+        top: `${isSmallerThan780 ? '85rem' : '52%'}`,
         transform: 'translate(-50%, -50%)'
       }}
+      transition="all .2s"
     >
-      <GridItem>
-        <Img src="/src/images/traveltypes_icons/cocktail1.png" alt="cocktail Image" mx="auto" />
-        <Text
-          as="h2"
-          fontSize="1.5rem"
-          color="gray.600"
-          fontWeight="bold"
-          textAlign="center"
-        >
-          Vida Noturna
-        </Text>
-      </GridItem>
-      <GridItem>
-        <Img src="/src/images/traveltypes_icons/surf1.png" alt="surf Image" mx="auto" />
-        <Text
-          as="h2"
-          fontSize="1.5rem"
-          color="gray.600"
-          fontWeight="bold"
-          textAlign="center"
-        >
-          Praia
-        </Text>
-      </GridItem>
-      <GridItem>
-        <Img src="/src/images/traveltypes_icons/building1.png" alt="building Image" mx="auto" />
-        <Text
-          as="h2"
-          fontSize="1.5rem"
-          color="gray.600"
-          fontWeight="bold"
-          textAlign="center"
-        >
-          Moderno
-        </Text>
-      </GridItem>
-      <GridItem>
-        <Img src="/src/images/traveltypes_icons/museum1.png" alt="museum Image" mx="auto" />
-        <Text
-          as="h2"
-          fontSize="1.5rem"
-          color="gray.600"
-          fontWeight="bold"
-          textAlign="center"
-        >
-          Clássico
-        </Text>
-      </GridItem>
-      <GridItem>
-        <Img src="/src/images/traveltypes_icons/earth1.png" alt="earth Image" mx="auto" />
-        <Text
-          as="h2"
-          fontSize="1.5rem"
-          color="gray.600"
-          fontWeight="bold"
-          textAlign="center"
-        >
-          E mais...
-        </Text>
-      </GridItem>
-    </Grid>
+      <TravelType image={cocktailImage} detail="Vida noturna" />
+      <TravelType image={surfImage} detail="Praias" />
+      <TravelType image={building} detail="Moderna" />
+      <TravelType image={museumImage} detail="Clássica" />
+      <TravelType image={earthImage} detail="E mais..." />
+    </Flex>
   )
 }

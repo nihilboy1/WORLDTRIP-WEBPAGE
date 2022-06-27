@@ -1,4 +1,4 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex, Text, useMediaQuery } from '@chakra-ui/react'
 import { useParams } from 'react-router-dom'
 import data from '../../continentData.json'
 import africaImageBanner from '../../images/continent_infos_banners/africa_continentinfos.jpg'
@@ -16,6 +16,7 @@ export function ContinentInfosBanner({
   currentContinentID
 }: ContinentInfosBannerProps) {
   const { id } = useParams()
+  const [isSmallerThan600] = useMediaQuery('(max-width: 600px)')
 
   return (
     <Flex
@@ -39,8 +40,10 @@ export function ContinentInfosBanner({
       }
       minH="31.50rem"
       backgroundSize="cover"
-      pl="12%"
-      pb="4rem"
+      justifyContent={isSmallerThan600 ? 'center' : ''}
+      pl={isSmallerThan600 ? '0' : '12%'}
+      pb={isSmallerThan600 ? '15rem' : '4rem'}
+      
     >
       <Text
         as="h1"

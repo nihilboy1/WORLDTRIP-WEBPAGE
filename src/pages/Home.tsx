@@ -6,7 +6,7 @@ import { TravelTypesBox } from '../components/TravelTypesBox/Index'
 
 function Home() {
   return (
-    <Flex as="main" flexDir="column">
+    <Flex as="main" flexDir="column" minW="375px">
       <Header />
       <HomeBanner />
       <TravelTypesBox />

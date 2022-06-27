@@ -1,8 +1,15 @@
-import { Box } from '@chakra-ui/react'
+import { Box, useMediaQuery } from '@chakra-ui/react'
 
 function Icon() {
+  const [isSmallerThan1180] = useMediaQuery('(max-width: 1180px)')
+
   return (
-    <Box position="absolute" right="9rem" bottom="-2rem" >
+    <Box
+      position="absolute"
+      right="9rem"
+      bottom="-2rem"
+      visibility={isSmallerThan1180 ? 'hidden' : 'visible'}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="431"
