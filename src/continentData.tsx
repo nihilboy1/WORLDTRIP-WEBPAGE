@@ -1,5 +1,3 @@
-import londresFlag from './images/cities_images/londres_flag.png'
-
 const continentData = [
   {
     about:
@@ -12,7 +10,7 @@ const continentData = [
       {
         name: 'Londres',
         country: 'Reino Unido',
-        countryFlag: londresFlag,
+        countryFlag: './images/cities_images/londres_flag.png',
         cityImage: './src/images/cities_images/londres.png'
       },
       {
