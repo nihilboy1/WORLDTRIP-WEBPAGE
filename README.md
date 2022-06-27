@@ -1,25 +1,33 @@
-# WORLDTRIP WEBPAGE 🖖
-Página criada como desafio do ignite-react da rocketseat, e incrementada cons alguns detalhes e funcionalidades por mim posteriormente
+<body>
+  <h1>WORLDTRIP WEBPAGE 🖖</h1>
+  <p style="font-weight: 500">
+    Página criada como desafio do ignite-react da rocketseat, e incrementada
+    cons alguns detalhes e funcionalidades por mim posteriormente
+  </p>
 
-## 🔎 | Visualize
-Visualize o projeto:
-![alt text](https://imgur.com/a/Q9YLiv4)
+  <h1>🔎 | Visualize</h1>
+  <img src="https://i.imgur.com/XUyLf8W.png" alt="Foto da aplicação" />
 
-https://worldtrip-webpage.netlify.app/
+  <h1>👾 | Deploy</h1>
+  <a href="https://worldtrip-webpage.netlify.app/">worldtrip-webpage</a>
 
-## 🛸 | Tecnologias
-Na construção desses projetos, foram utilizadas as seguintes linguagens, libs e frameworks
-- HTML
-- CSS 
-- Typescript
-- React
-- React Router Dom
-- Chakra UI
-- Swipper
-- Vite
+  <h1>🛸 | Tecnologias</h1>
+  <p>
+    Na construção desses projetos, foram utilizadas as seguintes linguagens,
+    libs e frameworks:
+  </p>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Typescript</li>
+    <li>React</li>
+    <li>React Router Dom</li>
+    <li>Chakra UI</li>
+    <li>Swipper</li>
+    <li>Vite</li>
+  </ul>
 
-👥 | Autor(es)
-Autores e colaboradores do projeto:
-- [Samuel Seve](https://github.com/nihilboy1)
-
-
+  <h1>👥 | Autor(es)</h1>
+  <p>Autores e colaboradores do projeto:</p>
+  <a href="https://github.com/nihilboy1">Samuel Seve</a>
+</body>
