@@ -1,9 +1,7 @@
-<body>
   <h1>WORLDTRIP WEBPAGE 🖖</h1>
-  <p style="font-weight: 500">
-    Página criada como desafio do ignite-react da rocketseat, e incrementada
-    cons alguns detalhes e funcionalidades por mim posteriormente
-  </p>
+  <h3>
+    Página criada como desafio do Ignite-React da Rocketseat, e levada para um próximo nivel por mim posteriormente.
+  </h3>
 
   <h1>🔎 | Visualize</h1>
   <img src="https://i.imgur.com/XUyLf8W.png" alt="Foto da aplicação" />
@@ -30,4 +28,3 @@
   <h1>👥 | Autor(es)</h1>
   <p>Autores e colaboradores do projeto:</p>
   <a href="https://github.com/nihilboy1">Samuel Seve</a>
-</body>
