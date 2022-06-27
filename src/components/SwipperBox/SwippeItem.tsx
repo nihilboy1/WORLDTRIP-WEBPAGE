@@ -22,7 +22,7 @@ export function SwippeItem({ swipperData }: SwippeItemProsp) {
       flexDir="column"
       align="center"
       justify="center"
-
+      border="1px solid black"
     >
       <Flex
         flexDir="column"
@@ -31,7 +31,6 @@ export function SwippeItem({ swipperData }: SwippeItemProsp) {
         textAlign="center"
         w={isSmallerThan780 ? '12rem' : '30rem'}
         transition="all .4s"
-
       >
         <Tooltip
           label="Clique para saber mais!"

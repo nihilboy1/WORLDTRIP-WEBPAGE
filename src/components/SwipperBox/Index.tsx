@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react'
+import { Box, Flex, Text, useMediaQuery } from '@chakra-ui/react'
 import { A11y, Navigation, Pagination } from 'swiper'
 import 'swiper/css/bundle'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -6,6 +6,8 @@ import swipperData from '../../swipperData.json'
 import { SwippeItem } from './SwippeItem'
 
 export function SwipperBox() {
+  const [isSmallerThan780] = useMediaQuery('(max-width: 780px)')
+
   return (
     <Flex
       align="center"
@@ -20,9 +22,8 @@ export function SwipperBox() {
           Vamos nessa? <br /> Então escolha seu continente
         </Text>
       </Box>
-      <Flex w="75%">
+      <Flex w={isSmallerThan780 ? "90%" : "75%"}>
         <Swiper
-          // install Swiper modules
           modules={[Navigation, Pagination, A11y]}
           slidesPerView={1}
           navigation

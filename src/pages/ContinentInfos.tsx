@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex, Text } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { CitiesBox } from '../components/CitiesBox/Index'
@@ -28,9 +28,19 @@ export function ContinentInfos() {
     <>
       <Flex as="main" flexDir="column" minW="375px">
         <Header />
-        <ContinentInfosBanner currentContinentID={currentContinentID} />
-        <ContinentInfosTexts currentContinentID={currentContinentID} />
-        <CitiesBox currentContinentID={currentContinentID} />
+        {id && continentList.includes(id) ? (
+          <>
+            <ContinentInfosBanner currentContinentID={currentContinentID} />
+            <ContinentInfosTexts currentContinentID={currentContinentID} />
+            <CitiesBox currentContinentID={currentContinentID} />
+          </>
+        ) : (
+          <Flex w="full" justifyContent="center" h="80vh" align="center">
+            <Text as="h1" fontSize="2rem">
+              Errou a url ai, meu chapa?
+            </Text>
+          </Flex>
+        )}
       </Flex>
     </>
   )
