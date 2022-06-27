@@ -1,30 +1,55 @@
+import africasulFlag from './images/cities_images/africadosul_flag.png'
 import amsterdaImage from './images/cities_images/amsterda.png'
 import holandaFlag from './images/cities_images/amsterda_flag.png'
+import argentinaFlag from './images/cities_images/argentina_flag.png'
+import bangkokImage from './images/cities_images/bangkok.avif'
+import boliviaFlag from './images/cities_images/bolivia_flag.png'
 import brasilFlag from './images/cities_images/brasil_flag.png'
+import buenosairesImage from './images/cities_images/buenosaires.avif'
+import cairoImage from './images/cities_images/cairo.avif'
 import cancunImage from './images/cities_images/cancun.avif'
+import capetownImage from './images/cities_images/capetown.avif'
+import cuscoImage from './images/cities_images/cusco.jpg'
+import dubaiImage from './images/cities_images/dubai.avif'
+import dubaiFlag from './images/cities_images/dubai_flag.png'
+import egitoFlag from './images/cities_images/egito_flag.png'
 import usFlag from './images/cities_images/estadosunidos_flag.png'
 import francaFlag from './images/cities_images/franca_flag.png'
+import hongkongImage from './images/cities_images/hongkong.avif'
+import hongkongFlag from './images/cities_images/hongkong_flag.png'
+import joanesburgoImage from './images/cities_images/joanesburgo.avif'
+import lapazImage from './images/cities_images/lapaz.avif'
 import lasvegasImage from './images/cities_images/lasvegas.avif'
 import londresImage from './images/cities_images/londres.png'
 import londresFlag from './images/cities_images/londres_flag.png'
 import losangelesImage from './images/cities_images/losangeles.avif'
+import macauImage from './images/cities_images/macau.avif'
+import macauFlag from './images/cities_images/macau_flag.png'
+import marrakeshImage from './images/cities_images/marrakesh.avif'
+import marrocosFlag from './images/cities_images/marrocos_flag.png'
 import mexicoFlag from './images/cities_images/mexico_flag.png'
 import miamiImage from './images/cities_images/miami.avif'
 import novayorkImage from './images/cities_images/novayork.avif'
 import parisImage from './images/cities_images/paris.png'
+import peruFlag from './images/cities_images/peru_flag.png'
 import pragaImage from './images/cities_images/praga.png'
 import repTchecaFlag from './images/cities_images/praga_flag.png'
+import rioImage from './images/cities_images/rio.avif'
 import romaImage from './images/cities_images/roma.png'
 import italiaFlag from './images/cities_images/roma_flag.png'
-import rioImage from './images/cities_images/rio.avif'
 import saopauloImage from './images/cities_images/saopaulo.jpg'
-import argentinaFlag from './images/cities_images/argentina_flag.png'
-import buenosairesImage from './images/cities_images/buenosaires.avif'
-import peruFlag from './images/cities_images/peru_flag.png'
-import cuscoImage from './images/cities_images/cusco.jpg'
-import boliviaFlag from './images/cities_images/bolivia_flag.png'
-import lapazImage from './images/cities_images/lapaz.avif'
-
+import singapuraImage from './images/cities_images/singapore.avif'
+import singapuraFlag from './images/cities_images/singapore_flag.png'
+import stonetownImage from './images/cities_images/stonetown.avif'
+import tailandiaFlag from './images/cities_images/tailandia_flag.png'
+import tanzaniaFlag from './images/cities_images/tanzania_flag.png'
+import australiaFlag from './images/cities_images/australia_flag.png'
+import sydneyImage from './images/cities_images/sydney.avif'
+import nzFlag from './images/cities_images/nz_flag.png'
+import aucklandImage from './images/cities_images/auckland.avif'
+import queenstownImage from './images/cities_images/queenstown.avif'
+import pearthImage from './images/cities_images/perth.avif'
+import brisbaneImage from './images/cities_images/brisbane.avif'
 
 const continentData = [
   {
@@ -158,32 +183,32 @@ const continentData = [
       {
         name: 'Hong Kong',
         country: 'Hong Kong',
-        countryFlag: '/src/images/cities_images/hongkong_flag.png',
-        cityImage: '/src/images/cities_images/hongkong.avif'
+        countryFlag: hongkongFlag,
+        cityImage: hongkongImage
       },
       {
         name: 'Dubai',
         country: 'Emirados Árabes',
-        countryFlag: '/src/images/cities_images/dubai_flag.png',
-        cityImage: '/src/images/cities_images/dubai.avif'
+        countryFlag: dubaiFlag,
+        cityImage: dubaiImage
       },
       {
         name: 'Macau',
         country: 'Macau',
-        countryFlag: '/src/images/cities_images/macau_flag.png',
-        cityImage: '/src/images/cities_images/macau.avif'
+        countryFlag: macauFlag,
+        cityImage: macauImage
       },
       {
-        name: 'Singapore',
-        country: 'Singapore',
-        countryFlag: '/src/images/cities_images/singapore_flag.png',
-        cityImage: '/src/images/cities_images/singapore.avif'
+        name: 'Singapura',
+        country: 'Singapura',
+        countryFlag: singapuraFlag,
+        cityImage: singapuraImage
       },
       {
         name: 'Bangkok',
         country: 'Tailândia',
-        countryFlag: '/src/images/cities_images/tailandia_flag.png',
-        cityImage: '/src/images/cities_images/bangkok.avif'
+        countryFlag: tailandiaFlag,
+        cityImage: bangkokImage
       }
     ]
   },
@@ -198,32 +223,32 @@ const continentData = [
       {
         name: 'Joanesburgo',
         country: 'África do Sul',
-        countryFlag: '/src/images/cities_images/africadosul_flag.png',
-        cityImage: '/src/images/cities_images/joanesburgo.avif'
+        countryFlag: africasulFlag,
+        cityImage: joanesburgoImage
       },
       {
         name: 'Cape Town',
         country: 'África do Sul',
-        countryFlag: '/src/images/cities_images/africadosul_flag.png',
-        cityImage: '/src/images/cities_images/capetown.avif'
+        countryFlag: africasulFlag,
+        cityImage: capetownImage
       },
       {
         name: 'Stone Town',
         country: 'Tanzânia',
-        countryFlag: '/src/images/cities_images/tanzania_flag.png',
-        cityImage: '/src/images/cities_images/stonetown.avif'
+        countryFlag: tanzaniaFlag,
+        cityImage: stonetownImage
       },
       {
         name: 'Cairo',
         country: 'Egito',
-        countryFlag: '/src/images/cities_images/egito_flag.png',
-        cityImage: '/src/images/cities_images/cairo.avif'
+        countryFlag: egitoFlag,
+        cityImage: cairoImage
       },
       {
         name: 'Marrakesh',
         country: 'Marrocos',
-        countryFlag: '/src/images/cities_images/marrocos_flag.png',
-        cityImage: '/src/images/cities_images/marrakesh.avif'
+        countryFlag: marrocosFlag,
+        cityImage: marrakeshImage
       }
     ]
   },
@@ -238,32 +263,32 @@ const continentData = [
       {
         name: 'Sydney',
         country: 'Austrália',
-        countryFlag: '/src/images/cities_images/australia_flag.png',
-        cityImage: '/src/images/cities_images/sydney.avif'
+        countryFlag: australiaFlag,
+        cityImage: sydneyImage
       },
       {
         name: 'Auckland',
         country: 'Nova Zelândia',
-        countryFlag: '/src/images/cities_images/nz_flag.png',
-        cityImage: '/src/images/cities_images/auckland.avif'
+        countryFlag: nzFlag,
+        cityImage: aucklandImage
       },
       {
         name: 'Queens Town',
         country: 'Austrália',
-        countryFlag: '/src/images/cities_images/australia_flag.png',
-        cityImage: '/src/images/cities_images/queenstown.avif'
+        countryFlag: australiaFlag,
+        cityImage: queenstownImage
       },
       {
         name: 'Perth',
         country: 'Austrália',
-        countryFlag: '/src/images/cities_images/australia_flag.png',
-        cityImage: '/src/images/cities_images/perth.avif'
+        countryFlag: australiaFlag,
+        cityImage: pearthImage
       },
       {
         name: 'Brisbane',
         country: 'Austrália',
-        countryFlag: '/src/images/cities_images/australia_flag.png',
-        cityImage: '/src/images/cities_images/brisbane.avif'
+        countryFlag: australiaFlag,
+        cityImage: brisbaneImage
       }
     ]
   }
