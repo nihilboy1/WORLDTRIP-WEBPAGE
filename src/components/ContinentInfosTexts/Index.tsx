@@ -7,8 +7,7 @@ import {
   useMediaQuery,
   VStack
 } from '@chakra-ui/react'
-
-import data from '../../continentData.json'
+import continentData from '../../continentData'
 
 interface ContinentInfosTextsProps {
   currentContinentID: number
@@ -37,7 +36,7 @@ export function ContinentInfosTexts({
         w={isSmallerThan1100 ? '80%' : '35%'}
         color="gray.600"
       >
-        {data[currentContinentID].about}
+        {continentData[currentContinentID].about}
       </Box>
       <Flex
         justify="space-between"
@@ -50,7 +49,7 @@ export function ContinentInfosTexts({
       >
         <VStack>
           <Text fontSize="3rem" fontWeight="semibold" color="yellow.400">
-            {data[currentContinentID].countriesAmount}
+            {continentData[currentContinentID].countriesAmount}
           </Text>
           <Text fontSize="1.5rem" fontWeight="semibold" color="gray.600">
             Países
@@ -58,7 +57,7 @@ export function ContinentInfosTexts({
         </VStack>
         <VStack>
           <Text fontSize="3rem" fontWeight="semibold" color="yellow.400">
-            {data[currentContinentID].languagesAmount}
+            {continentData[currentContinentID].languagesAmount}
           </Text>
           <Text fontSize="1.5rem" fontWeight="semibold" color="gray.600">
             Línguas
@@ -66,7 +65,7 @@ export function ContinentInfosTexts({
         </VStack>
         <VStack>
           <Text fontSize="3rem" fontWeight="semibold" color="yellow.400">
-            {data[currentContinentID].topCities}
+            {continentData[currentContinentID].topCities}
           </Text>
           <Flex alignItems="center" justify="space-between">
             <Text

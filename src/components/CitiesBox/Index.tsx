@@ -1,5 +1,5 @@
 import { Box, Flex, Img, Text, useMediaQuery } from '@chakra-ui/react'
-import data from '../../continentData.json'
+import data from '../../continentData'
 
 interface CitiesBoxProps {
   currentContinentID: number

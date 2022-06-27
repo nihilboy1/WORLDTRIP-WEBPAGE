@@ -1,6 +1,6 @@
 import { Flex, Text, useMediaQuery } from '@chakra-ui/react'
 import { useParams } from 'react-router-dom'
-import data from '../../continentData.json'
+import data from '../../continentData'
 import africaImageBanner from '../../images/continent_infos_banners/africa_continentinfos.jpg'
 import americanorteImageBanner from '../../images/continent_infos_banners/americanorte_continentinfos.jpg'
 import americasulImageBanner from '../../images/continent_infos_banners/americasul_continentinfos.jpg'

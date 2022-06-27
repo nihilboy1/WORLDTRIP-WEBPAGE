@@ -22,7 +22,6 @@ export function SwippeItem({ swipperData }: SwippeItemProsp) {
       flexDir="column"
       align="center"
       justify="center"
-      border="1px solid black"
     >
       <Flex
         flexDir="column"
