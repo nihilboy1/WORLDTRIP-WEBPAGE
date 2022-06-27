@@ -2,7 +2,7 @@ import { Box, Flex, Text, useMediaQuery } from '@chakra-ui/react'
 import { A11y, Navigation, Pagination } from 'swiper'
 import 'swiper/css/bundle'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import swipperData from '../../swipperData.json'
+import swipperData from '../../swipperData'
 import { SwippeItem } from './SwippeItem'
 
 export function SwipperBox() {
