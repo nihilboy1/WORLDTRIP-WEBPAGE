@@ -1,5 +1,7 @@
+import francaFlag from './images/cities_images/franca_flag.png'
+import londresImage from './images/cities_images/londres.png'
 import londresFlag from './images/cities_images/londres_flag.png'
-import londresImage from './src/images/cities_images/londres.png'
+import parisImage from './images/cities_images/paris.png'
 
 const continentData = [
   {
@@ -19,8 +21,8 @@ const continentData = [
       {
         name: 'Paris',
         country: 'França',
-        countryFlag: '/src/images/cities_images/paris_flag.png',
-        cityImage: '/src/images/cities_images/paris.png'
+        countryFlag: francaFlag,
+        cityImage: parisImage
       },
       {
         name: 'Roma',
