@@ -1,8 +1,10 @@
 # WORLDTRIP WEBPAGE 🖖
 Página criada como desafio do ignite-react da rocketseat, e incrementada cons alguns detalhes e funcionalidades por mim posteriormente
-<h1>blau</h1>
+
 ## 🔎 | Visualize
 Visualize o projeto:
+![alt text](https://imgur.com/a/Q9YLiv4)
+
 https://worldtrip-webpage.netlify.app/
 
 ## 🛸 | Tecnologias
