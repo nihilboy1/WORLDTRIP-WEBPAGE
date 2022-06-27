@@ -11,7 +11,7 @@ const continentData = [
         name: 'Londres',
         country: 'Reino Unido',
         countryFlag: '/src/images/cities_images/londres_flag.png',
-        cityImage: '/src/images/cities_images/londres.png'
+        cityImage: './src/images/cities_images/londres.png'
       },
       {
         name: 'Paris',
