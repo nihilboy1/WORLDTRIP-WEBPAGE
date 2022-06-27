@@ -1,4 +1,4 @@
-  <h1>WORLDTRIP WEBPAGE 🖖</h1>
+  <h1>🚀 | WORLDTRIP WEBPAGE</h1>
   <h3>
     Página criada como desafio do Ignite-React da Rocketseat, e levada para um próximo nivel por mim posteriormente.
   </h3>
