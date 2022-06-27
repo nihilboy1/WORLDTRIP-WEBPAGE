@@ -1,3 +1,8 @@
+/*
+Não sei como evitar tantas importações usando react, só sei resolver esse problema usando next, 
+e usar next não era o objetivo desse projeto
+*/
+
 import africaSwipperImage from './images/swipper_images/africa_swipper.avif'
 import americanorteSwipperImage from './images/swipper_images/americanorte_swipper.jpg'
 import americasulSwipperImage from './images/swipper_images/americasul_swipper.jpg'
