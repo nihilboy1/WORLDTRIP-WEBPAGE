@@ -7,7 +7,7 @@ export function Header() {
   const { id } = useParams()
   return (
     <Box
-      w="100%"
+      minW="450px"
       as="header"
       display="flex"
       justifyContent="center"

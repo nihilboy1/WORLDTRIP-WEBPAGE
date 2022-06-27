@@ -1,46 +1,55 @@
-import { Box, Flex, Img, Text } from '@chakra-ui/react'
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import data from '../../data.json'
+import { Box, Flex, Img, Text, useMediaQuery } from '@chakra-ui/react'
+import data from '../../continentData.json'
 
 interface CitiesBoxProps {
   currentContinentID: number
 }
 
-export function CitiesBox() {
-  const { id } = useParams()
-  const [currentContinentID, setCurrentContinentID] = useState<number>(0)
-  const continentList = [
-    'europa',
-    'americanorte',
-    'americasul',
-    'asia',
-    'africa',
-    'oceania'
-  ]
+export function CitiesBox({ currentContinentID }: CitiesBoxProps) {
+  const [isSmallerThan960] = useMediaQuery('(max-width: 960px)')
 
-  useEffect(() => {
-    if (id && continentList.includes(id)) {
-      const index = continentList.indexOf(id)
-      setCurrentContinentID(index)
-    }
-  })
   return (
-    <Flex w="full" flexDir="column" my="5rem" px="13rem">
+    <Flex
+      w="full"
+      flexDir="column"
+      my="5rem"
+      px="10rem"
+      align={isSmallerThan960 ? 'center' : ''}
+    >
       <Text
         as="h1"
         fontSize="2.25rem"
         color="gray.600"
         fontWeight="semibold"
         mb="2rem"
+        textAlign={isSmallerThan960 ? 'center' : 'left'}
+        width="16rem"
       >
         Cidades +100
       </Text>
-      <Flex w="full" justify="space-between" wrap="wrap">
+      <Flex
+        
+        minW="16rem"
+        justify={isSmallerThan960 ? 'center' : 'space-between'}
+        wrap="wrap"
+        gap="2rem"
+      >
         {data[currentContinentID].cities.map(city => {
           return (
-            <Flex key={city.name} flexDir="column" borderRadius="md" mb="4rem">
-              <Img src={city.cityImage} width="16rem" height="12rem" borderTopRadius="md" />
+            <Flex
+              key={city.name}
+              flexDir="column"
+              borderRadius="md"
+              mb="4rem"
+              minWidth="16rem"
+              boxShadow="1px 1px 5px #9F9F9F"
+            >
+              <Img
+                src={city.cityImage}
+                width="16rem"
+                height="12rem"
+                borderTopRadius="md"
+              />
               <Flex
                 align="center"
                 justifyContent="space-between"
@@ -62,11 +71,7 @@ export function CitiesBox() {
                     {city.country}
                   </Text>
                 </Box>
-                <Img
-                  src={city.countryFlag}
-                  w="2rem"
-                  h="2rem"
-                />
+                <Img src={city.countryFlag} w="2rem" h="2rem" />
               </Flex>
             </Flex>
           )
