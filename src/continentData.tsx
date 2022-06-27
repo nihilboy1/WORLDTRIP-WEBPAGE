@@ -1,7 +1,30 @@
+import amsterdaImage from './images/cities_images/amsterda.png'
+import holandaFlag from './images/cities_images/amsterda_flag.png'
+import brasilFlag from './images/cities_images/brasil_flag.png'
+import cancunImage from './images/cities_images/cancun.avif'
+import usFlag from './images/cities_images/estadosunidos_flag.png'
 import francaFlag from './images/cities_images/franca_flag.png'
+import lasvegasImage from './images/cities_images/lasvegas.avif'
 import londresImage from './images/cities_images/londres.png'
 import londresFlag from './images/cities_images/londres_flag.png'
+import losangelesImage from './images/cities_images/losangeles.avif'
+import mexicoFlag from './images/cities_images/mexico_flag.png'
+import miamiImage from './images/cities_images/miami.avif'
+import novayorkImage from './images/cities_images/novayork.avif'
 import parisImage from './images/cities_images/paris.png'
+import pragaImage from './images/cities_images/praga.png'
+import repTchecaFlag from './images/cities_images/praga_flag.png'
+import romaImage from './images/cities_images/roma.png'
+import italiaFlag from './images/cities_images/roma_flag.png'
+import rioImage from './images/cities_images/rio.avif'
+import saopauloImage from './images/cities_images/saopaulo.jpg'
+import argentinaFlag from './images/cities_images/argentina_flag.png'
+import buenosairesImage from './images/cities_images/buenosaires.avif'
+import peruFlag from './images/cities_images/peru_flag.png'
+import cuscoImage from './images/cities_images/cusco.jpg'
+import boliviaFlag from './images/cities_images/bolivia_flag.png'
+import lapazImage from './images/cities_images/lapaz.avif'
+
 
 const continentData = [
   {
@@ -27,20 +50,20 @@ const continentData = [
       {
         name: 'Roma',
         country: 'Itália',
-        countryFlag: '/src/images/cities_images/roma_flag.png',
-        cityImage: '/src/images/cities_images/roma.png'
+        countryFlag: italiaFlag,
+        cityImage: romaImage
       },
       {
         name: 'Praga',
         country: 'República Tcheca',
-        countryFlag: '/src/images/cities_images/praga_flag.png',
-        cityImage: '/src/images/cities_images/praga.png'
+        countryFlag: repTchecaFlag,
+        cityImage: pragaImage
       },
       {
         name: 'Amsterdã',
         country: 'Holanda',
-        countryFlag: '/src/images/cities_images/amsterda_flag.png',
-        cityImage: '/src/images/cities_images/amsterda.png'
+        countryFlag: holandaFlag,
+        cityImage: amsterdaImage
       }
     ]
   },
@@ -55,32 +78,32 @@ const continentData = [
       {
         name: 'New York City',
         country: 'Estados Unidos',
-        countryFlag: '/src/images/cities_images/estadosunidos_flag.png',
-        cityImage: '/src/images/cities_images/novayork.avif'
+        countryFlag: usFlag,
+        cityImage: novayorkImage
       },
       {
         name: 'Miami',
         country: 'Estados Unidos',
-        countryFlag: '/src/images/cities_images/estadosunidos_flag.png',
-        cityImage: '/src/images/cities_images/miami.avif'
+        countryFlag: usFlag,
+        cityImage: miamiImage
       },
       {
         name: 'Los Angeles',
         country: 'Estados Unidos',
-        countryFlag: '/src/images/cities_images/estadosunidos_flag.png',
-        cityImage: '/src/images/cities_images/losangeles.avif'
+        countryFlag: usFlag,
+        cityImage: losangelesImage
       },
       {
         name: 'Las Vegas',
         country: 'Estados Unidos',
-        countryFlag: '/src/images/cities_images/estadosunidos_flag.png',
-        cityImage: '/src/images/cities_images/lasvegas.avif'
+        countryFlag: usFlag,
+        cityImage: lasvegasImage
       },
       {
         name: 'Cancún',
         country: 'México',
-        countryFlag: '/src/images/cities_images/mexico_flag.png',
-        cityImage: '/src/images/cities_images/cancun.avif'
+        countryFlag: mexicoFlag,
+        cityImage: cancunImage
       }
     ]
   },
@@ -95,32 +118,32 @@ const continentData = [
       {
         name: 'Rio de Janeiro',
         country: 'Brasil',
-        countryFlag: '/src/images/cities_images/brasil_flag.png',
-        cityImage: '/src/images/cities_images/rio.avif'
+        countryFlag: brasilFlag,
+        cityImage: rioImage
       },
       {
         name: 'São Paulo',
         country: 'Brasil',
-        countryFlag: '/src/images/cities_images/brasil_flag.png',
-        cityImage: '/src/images/cities_images/saopaulo.jpg'
+        countryFlag: brasilFlag,
+        cityImage: saopauloImage
       },
       {
         name: 'Buenos Aires',
         country: 'Argentina',
-        countryFlag: '/src/images/cities_images/argentina_flag.png',
-        cityImage: '/src/images/cities_images/buenosaires.avif'
+        countryFlag: argentinaFlag,
+        cityImage: buenosairesImage
       },
       {
         name: 'Cusco',
         country: 'Peru',
-        countryFlag: '/src/images/cities_images/peru_flag.png',
-        cityImage: '/src/images/cities_images/cusco.jpg'
+        countryFlag: peruFlag,
+        cityImage: cuscoImage
       },
       {
         name: 'La Paz',
         country: 'Bolívia',
-        countryFlag: '/src/images/cities_images/bolivia_flag.png',
-        cityImage: '/src/images/cities_images/lapaz.avif'
+        countryFlag: boliviaFlag,
+        cityImage: lapazImage
       }
     ]
   },
