@@ -1,4 +1,4 @@
-import { Box, Flex, Img, Text, useMediaQuery } from '@chakra-ui/react'
+import { Box, Flex, Img, Link, Text, useMediaQuery } from '@chakra-ui/react'
 import data from '../../continentData'
 
 interface CitiesBoxProps {
@@ -9,11 +9,10 @@ export function CitiesBox({ currentContinentID }: CitiesBoxProps) {
   const [isSmallerThan960] = useMediaQuery('(max-width: 960px)')
 
   return (
-    
     <Flex
       w="full"
       flexDir="column"
-      my="5rem"
+      my="10rem"
       px="10rem"
       align={isSmallerThan960 ? 'center' : ''}
     >
@@ -22,14 +21,13 @@ export function CitiesBox({ currentContinentID }: CitiesBoxProps) {
         fontSize="2.25rem"
         color="gray.600"
         fontWeight="semibold"
-        mb="2rem"
+        pb="2rem"
         textAlign={isSmallerThan960 ? 'center' : 'left'}
         width="16rem"
       >
         Cidades +100
       </Text>
       <Flex
-        
         minW="16rem"
         justify={isSmallerThan960 ? 'center' : 'space-between'}
         wrap="wrap"
@@ -37,44 +35,54 @@ export function CitiesBox({ currentContinentID }: CitiesBoxProps) {
       >
         {data[currentContinentID].cities.map(city => {
           return (
-            <Flex
-              key={city.name}
-              flexDir="column"
-              borderRadius="md"
+            <Link
+              target={'_blank'}
+              href={`https://pt.wikipedia.org/wiki/${city.name}`}
+              h="15rem"
               mb="4rem"
-              minWidth="16rem"
-              boxShadow="1px 1px 5px #9F9F9F"
             >
-              <Img
-                src={city.cityImage}
-                width="16rem"
-                height="12rem"
-                borderTopRadius="md"
-              />
               <Flex
-                align="center"
-                justifyContent="space-between"
-                px="1.2rem"
-                py="0.5rem"
-                border="1px solid #FFBA08"
-                borderBottomRadius="md"
+                _hover={{ boxShadow: '1px 1px 5px #545050' }}
+                key={currentContinentID}
+                flexDir="column"
+                borderRadius="md"
+                mb="4rem"
+                minWidth="16rem"
+                boxShadow="1px 1px 5px #9F9F9F"
               >
-                <Box>
-                  <Text
-                    as="h2"
-                    fontSize="1.25rem"
-                    color="gray.600"
-                    fontWeight="semibold"
-                  >
-                    {city.name}
-                  </Text>
-                  <Text fontSize="1rem" as="h3" color="gray.500">
-                    {city.country}
-                  </Text>
-                </Box>
-                <Img src={city.countryFlag} w="2rem" h="2rem" />
+                <Img
+                  src={city.cityImage}
+                  width="16rem"
+                  height="12rem"
+                  borderTopRadius="md"
+                />
+                <Flex
+                  align="center"
+                  justifyContent="space-between"
+                  px="1.2rem"
+                  py="0.5rem"
+                  border="1px solid #FFBA08"
+                  borderBottomRadius="md"
+                >
+                  <Box>
+                    <Text
+                      as="h2"
+                      fontSize="1.25rem"
+                      color="gray.600"
+                      fontWeight="semibold"
+                    >
+                      {city.name == 'Perth_(Austrália_Ocidental)'
+                        ? 'Perth'
+                        : city.name}
+                    </Text>
+                    <Text fontSize="1rem" as="h3" color="gray.500">
+                      {city.country}
+                    </Text>
+                  </Box>
+                  <Img src={city.countryFlag} w="2rem" h="2rem" />
+                </Flex>
               </Flex>
-            </Flex>
+            </Link>
           )
         })}
       </Flex>

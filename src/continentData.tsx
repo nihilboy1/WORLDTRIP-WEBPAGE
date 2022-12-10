@@ -90,7 +90,7 @@ const continentData = [
         cityImage: pragaImage
       },
       {
-        name: 'Amsterdã',
+        name: 'Amesterdão',
         country: 'Holanda',
         countryFlag: holandaFlag,
         cityImage: amsterdaImage
@@ -278,13 +278,13 @@ const continentData = [
         cityImage: aucklandImage
       },
       {
-        name: 'Queens Town',
+        name: 'Queenstown',
         country: 'Austrália',
         countryFlag: australiaFlag,
         cityImage: queenstownImage
       },
       {
-        name: 'Perth',
+        name: 'Perth_(Austrália_Ocidental)',
         country: 'Austrália',
         countryFlag: australiaFlag,
         cityImage: pearthImage
